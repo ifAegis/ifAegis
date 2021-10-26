@@ -12,9 +12,10 @@ jobs:
       # See action.yml for all options
       - uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
-          token: ${{ secrets.METRICS_TOKEN }}
-
           # ... other options
           plugin_followup: yes
           plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
+          
+          # Your GitHub token
+          token: ${{ secrets.METRICS_TOKEN }}
+
